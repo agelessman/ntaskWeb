@@ -1,0 +1,20 @@
+{
+  "name": "ntask-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run server",
+    "server": "http-server public -p 3001",
+    "build": "browserify src -t babelify -o public/js/app.js"
+  },
+  "author": "M.C",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browser-request": "^0.3.3",
+    "browserify": "^14.4.0",
+    "http-server": "^0.10.0",
+    "tiny-emitter": "^2.0.2"
+  }
+}
